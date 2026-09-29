@@ -1,5 +1,8 @@
 ---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 
+const pageTitle = "Shaka Agency";
 ---
 
 <html lang="en">
@@ -9,13 +12,10 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Shaka Agency - Marketing digital en málaga</title>
+		<title>{pageTitle} - Marketing digital en málaga</title>
 	</head>
-	<body>
-		<a href="/">Inicio</a>
-        <a href="/about/">Sobre nosotros</a>
-		<a href="/blog/">Blog</a>
-		
-		<h1>Shaka Agency</h1>
+	<body>	
+		<Navigation />	
+		<h1>{pageTitle}</h1>
 	</body>
 </html>

@@ -1,5 +1,8 @@
 ---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 
+const pageTitle = "Blog Shaka Agency";
 ---
 
 <html lang="en">
@@ -9,14 +12,11 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Blog Shaka Agency - Marketing digital en málaga</title>
+		<title>{pageTitle} - Marketing digital en málaga</title>
 	</head>
 	<body>
-        <a href="/">Inicio</a>
-        <a href="/about/">Sobre nosotros</a>
-        <a href="/blog/">Blog</a>
-
-		<h1>Blog Shaka Agency</h1>
+		<Navigation />
+		<h1>{pageTitle}</h1>
 		<p>Aquí es donde publicaré acerca de mi viaje aprendiendo Astro.</p>
 		<ul>
 			<li><a href="/posts/post-1/">Publicación 1</a></li>
